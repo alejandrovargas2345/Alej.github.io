@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alej✨</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Alej✨</div>
+        <button class="login-btn">Login</button>
+    </header>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <button class="toggle-btn">
+        <i class='bx bx-menu'></i>
+    </button>
+    <ul class="menu">
+        <li><i class='bx bx-chat'></i> Chat 1</li>
+        <li><i class='bx bx-chat'></i> Chat 2</li>
+        <li><i class='bx bx-chat'></i> Chat 3</li>
+        <li><i class='bx bx-chat'></i> Chat 4</li>
+        <li><i class='bx bx-chat'></i> Chat 5</li>
+        <li><i class='bx bx-chat'></i> Chat 6</li>
+        <li><i class='bx bx-plus-circle'></i> Nuevo Chat</li>
+    </ul>
+    <button class="settings-btn">
+        <i class='bx bx-cog'></i> Configuración
+    </button>
+</div>
+
+<!-- Boxicons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+
+    
+    
+
+    <div class="chat-container">
+        <div class="chat-header"></div>
+        <div class="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>© 2024 Alej. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="gen.js"></script>
+
+    
+
+
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.querySelector(".sidebar");
+    const toggleBtn = document.querySelector(".toggle-btn");
+
+    toggleBtn.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+    });
+});
+
+
+    </script>
+</body>
+</html>
+
+
